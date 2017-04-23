@@ -12,6 +12,7 @@ import AudioToolbox
 
 class GameViewController: UIViewController {
     
+    //Mark: - Properties
     var isPlayerOneTurn = true
     
     let ticTacToe = TicTacToe()
@@ -42,9 +43,8 @@ class GameViewController: UIViewController {
         
         gridView.snp.makeConstraints { (view) in
             view.centerX.equalToSuperview()
-            view.centerY.equalToSuperview().offset(10)
-            view.height.equalTo(260)
-            view.width.equalTo(260)
+            view.centerY.equalToSuperview()
+            view.height.width.equalTo(260)
         }
         
         // first-time setup for 3x3 buttons within the grid

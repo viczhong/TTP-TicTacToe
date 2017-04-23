@@ -3,7 +3,7 @@
 //  TTP-TicTacToe
 //
 //  Created by Victor Zhong on 4/21/17.
-//  Copyright © 2017 Access Code. All rights reserved.
+//  Copyright © 2017 Victor Zhong. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Instantiate a new window
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Set the window's root view controller
+        self.window?.rootViewController = GameViewController()
+        
+        // Display the content of your window
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 

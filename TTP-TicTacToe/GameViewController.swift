@@ -182,7 +182,7 @@ class GameViewController: UIViewController {
         }
         
         fanfareLabel.snp.makeConstraints { view in
-            view.top.equalToSuperview().offset(200)
+            view.bottom.equalTo(statusLabel.snp.top).offset(-16)
             view.centerX.equalToSuperview()
             view.width.equalToSuperview()
         }

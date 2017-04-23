@@ -12,7 +12,7 @@ Each player takes a turn placing their mark onto a square in the grid. Match 3 i
 
 Initial View | Playing | Winning
 --- | --- | ---
-![Initial View](https://github.com/viczhong/TTP-TicTacToe/blob/master/screenshots/screen1.png "Initial View") | ![Playing](https://github.com/viczhong/TTP-TicTacToe/blob/master/screenshots/screen2.png "Playing") | ![Winning](https://github.com/viczhong/TTP-TicTacToe/blob/master/screenshots/screen3.png "Winning")
+![Initial View](https://github.com/viczhong/TTP-TicTacToe/blob/master/screenshots/screen1.png "Initial View") | ![Playing](https://github.com/viczhong/TTP-TicTacToe/blob/master/screenshots/screen2.png "Playing") | ![Winning](https://github.com/viczhong/TTP-TicTacToe/blob/master/screenshots/screen31.png "Winning")
 
 ## The Method
 

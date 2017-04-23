@@ -4,7 +4,7 @@
 To run this app:
 1. Clone or download the files in this repo.
 2. Run `pod install` in terminal in the local `TTP-TicTacToe` directory to download and install Snapkit.
-3. After TTP-TicTacToe.xcworkspace is generated, open it in Xcode and build it.
+3. After `TTP-TicTacToe.xcworkspace` is generated, open it in Xcode and build/run it.
 
 ## The App
 

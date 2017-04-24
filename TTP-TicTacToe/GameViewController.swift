@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import AudioToolbox
+import AVFoundation
 
 class GameViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class GameViewController: UIViewController {
     
     var time = 0.0
     var timer: Timer!
+    
+    var player: AVAudioPlayer? // for winning sound effect
     
     let initialLabelString = "Player One's turn! Place an X"
     
@@ -193,7 +196,7 @@ class GameViewController: UIViewController {
         }
         
         fanfareLabel.text = playerWinString
-        AudioServicesPlaySystemSound(1103)
+        playFanfareSound()
         
         self.time = 0
         self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.checkTime), userInfo: nil, repeats: true)
@@ -212,6 +215,21 @@ class GameViewController: UIViewController {
         }
         
         self.time += 0.1
+    }
+    
+    //MARK: - AVFoundation Stuff
+    func playFanfareSound() {
+        let url = Bundle.main.url(forResource: "fanfare", withExtension: "mp3")!
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     
     //MARK: - Views and Lazy Views
